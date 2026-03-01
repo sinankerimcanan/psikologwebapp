@@ -20,7 +20,6 @@ export default function Footer() {
   return (
     <footer id="iletisim" className="bg-charcoal text-cream/70 pt-24 pb-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-
         {/* Top: CTA banner */}
         <FadeIn className="mb-20">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8 border-b border-white/10 pb-20">
@@ -61,7 +60,6 @@ export default function Footer() {
 
         {/* Middle: 3-column info */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
-
           {/* Brand */}
           <FadeIn delay={0.05}>
             <div className="space-y-4">
@@ -74,8 +72,8 @@ export default function Footer() {
                 </p>
               </div>
               <p className="font-sans text-sm text-cream/55 leading-relaxed max-w-[260px]">
-                Ruha dokunmak bir sanattır. Bilim ve empatiyi birleştirerek,
-                her danışanıma en iyi versiyonuna ulaşma yolunda eşlik ediyorum.
+                Ruha dokunmak bir sanattır. Bilim ve empatiyi birleştirerek, her
+                danışanıma en iyi versiyonuna ulaşma yolunda eşlik ediyorum.
               </p>
               {/* Social icons */}
               <div className="flex gap-3 pt-2">
@@ -97,7 +95,11 @@ export default function Footer() {
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                   >
-                    <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor">
+                    <svg
+                      className="w-3.5 h-3.5"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
                       <path d={s.path} />
                     </svg>
                   </motion.a>
@@ -140,8 +142,18 @@ export default function Footer() {
                     href="tel:+905001234567"
                     className="flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300"
                   >
-                    <svg className="w-3.5 h-3.5 text-sage flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    <svg
+                      className="w-3.5 h-3.5 text-sage flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                      />
                     </svg>
                     +90 500 123 45 67
                   </a>
@@ -149,15 +161,39 @@ export default function Footer() {
                     href="mailto:info@drayse.com"
                     className="flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300"
                   >
-                    <svg className="w-3.5 h-3.5 text-sage flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <svg
+                      className="w-3.5 h-3.5 text-sage flex-shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
                     </svg>
                     info@drayse.com
                   </a>
                   <p className="flex items-start gap-2 font-sans text-sm text-cream/60">
-                    <svg className="w-3.5 h-3.5 text-sage flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <svg
+                      className="w-3.5 h-3.5 text-sage flex-shrink-0 mt-0.5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={1.8}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
                     </svg>
                     Bağcılar Mah. Nişantaşı, İstanbul
                   </p>
@@ -169,9 +205,18 @@ export default function Footer() {
                 </p>
                 <ul className="space-y-2">
                   {hours.map((h) => (
-                    <li key={h.day} className="flex justify-between font-sans text-xs text-cream/55">
+                    <li
+                      key={h.day}
+                      className="flex justify-between font-sans text-xs text-cream/55"
+                    >
                       <span>{h.day}</span>
-                      <span className={h.day === "Pazar" ? "text-warm-gray" : "text-cream/70"}>{h.time}</span>
+                      <span
+                        className={
+                          h.day === "Pazar" ? "text-warm-gray" : "text-cream/70"
+                        }
+                      >
+                        {h.time}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -186,9 +231,23 @@ export default function Footer() {
             <p className="font-sans text-xs text-cream/30 tracking-wide">
               © {new Date().getFullYear()} Dr. Ayşe Kaya. Tüm hakları saklıdır.
             </p>
-            <p className="font-serif text-xs text-cream/25 italic">
-              &ldquo;Ruha dokunmak bir sanattır.&rdquo;
-            </p>
+            <div className="flex items-center gap-4">
+              <p className="font-serif text-xs text-cream/25 italic hidden md:block">
+                &ldquo;Ruha dokunmak bir sanattır.&rdquo;
+              </p>
+              <span className="hidden md:block text-cream/10">·</span>
+              <a
+                href="http://kerux.tr/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-[11px] text-cream/25 hover:text-cream/60 transition-colors duration-300 tracking-wide flex items-center gap-1.5 group"
+              >
+                Powered by
+                <span className="font-semibold tracking-wider group-hover:text-sage transition-colors duration-300">
+                  keruX
+                </span>
+              </a>
+            </div>
           </div>
         </FadeIn>
       </div>
