@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
+  { label: "Uzman Kadromuz", href: "#uzman-kadro" },
   { label: "Hizmetler", href: "#hizmetler" },
   { label: "Yaklaşım", href: "#yaklasim" },
   { label: "SSS", href: "#sss" },
