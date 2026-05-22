@@ -15,10 +15,24 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteTitle = "Özde Rehberlik - Psikolojik Danışmanlık Merkezi";
+const siteDescription =
+  "Özde Rehberlik, bireylerin psikolojik sağlığını desteklemek ve yaşam kalitesini artırmak amacıyla profesyonel danışmanlık hizmetleri sunan bir merkezdir. Uzman kadromuzla, kişisel gelişim, stres yönetimi, ilişki sorunları ve daha birçok konuda bireylere rehberlik ediyoruz.";
+
 export const metadata: Metadata = {
-  title: "Dr. Ayşe Kaya | Klinik Psikolog",
-  description:
-    "İstanbul merkezli klinik psikoloji hizmetleri. Bireysel terapi, çift terapisi ve kaygı bozukluğu tedavisi.",
+  title: siteTitle,
+  description: siteDescription,
+  icons: {
+    icon: "/assets/logo-icon.png",
+    apple: "/assets/logo-icon.png",
+  },
+  openGraph: {
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/assets/logo-icon.png"],
+    locale: "tr_TR",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

@@ -59,7 +59,7 @@ export default function Approach() {
               <footer className="flex items-center gap-3 pt-2">
                 <span className="w-8 h-px bg-sage" />
                 <cite className="not-italic font-sans text-sm text-warm-gray tracking-wide">
-                  Dr. Ayşe Kaya
+                  Özde Rehberlik Psikolojik Danışmanlık Merkezi
                 </cite>
               </footer>
             </blockquote>

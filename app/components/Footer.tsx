@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 
 const quickLinks = [
@@ -64,11 +65,15 @@ export default function Footer() {
           <FadeIn delay={0.05}>
             <div className="space-y-4">
               <div>
-                <p className="font-serif text-xl text-cream font-semibold">
-                  Dr. Ayşe Kaya
-                </p>
-                <p className="font-sans text-xs tracking-[0.18em] uppercase text-warm-gray mt-0.5">
-                  Klinik Psikolog
+                <Image
+                  src="/assets/logo.png"
+                  alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
+                  width={150}
+                  height={44}
+                  className="h-10 w-auto brightness-0 invert"
+                />
+                <p className="font-sans text-xs tracking-[0.18em] uppercase text-warm-gray mt-2">
+                  Rehberlik Psikolojik Danışmanlık Merkezi
                 </p>
               </div>
               <p className="font-sans text-sm text-cream/55 leading-relaxed max-w-[260px]">
@@ -139,7 +144,7 @@ export default function Footer() {
                 </p>
                 <div className="space-y-2.5">
                   <a
-                    href="tel:+905001234567"
+                    href="tel:+905425655862"
                     className="flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300"
                   >
                     <svg
@@ -155,7 +160,7 @@ export default function Footer() {
                         d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                       />
                     </svg>
-                    +90 500 123 45 67
+                    0542 565 58 62
                   </a>
                   <a
                     href="mailto:info@drayse.com"
@@ -195,7 +200,12 @@ export default function Footer() {
                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                       />
                     </svg>
-                    Bağcılar Mah. Nişantaşı, İstanbul
+                    <span>
+                      Kalenderhane, Karacaoğlan Sk. No:11, 42050 Karatay/Konya
+                      <span className="block text-xs text-cream/35 mt-1 tracking-wide">
+                        37°53&apos;00.6&quot;N 32°29&apos;56.7&quot;E
+                      </span>
+                    </span>
                   </p>
                 </div>
               </div>
@@ -225,11 +235,58 @@ export default function Footer() {
           </FadeIn>
         </div>
 
+        {/* Map */}
+        <FadeIn delay={0.1} className="mb-16">
+          <div className="space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3">
+              <div>
+                <p className="font-sans text-[10px] tracking-[0.22em] uppercase text-warm-gray mb-1.5">
+                  Konum
+                </p>
+                <h3 className="font-serif text-2xl text-cream">
+                  Bizi Ziyaret Edin
+                </h3>
+              </div>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=37.8835,32.49908"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300 self-start sm:self-auto group"
+              >
+                <svg
+                  className="w-3.5 h-3.5 text-sage flex-shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={1.8}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
+                  />
+                </svg>
+                Yol Tarifi Al
+                <span className="w-3 h-px bg-cream/20 group-hover:bg-sage group-hover:w-5 transition-all duration-300" />
+              </a>
+            </div>
+            <iframe
+              src="https://maps.google.com/maps?q=37.8835,32.49908&z=16&hl=tr&output=embed"
+              className="w-full h-[280px] md:h-[340px] rounded-2xl border border-white/10"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Özde Rehberlik konum haritası"
+              allowFullScreen
+            />
+          </div>
+        </FadeIn>
+
         {/* Bottom bar */}
         <FadeIn delay={0.2}>
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-t border-white/8 pt-8">
             <p className="font-sans text-xs text-cream/30 tracking-wide">
-              © {new Date().getFullYear()} Dr. Ayşe Kaya. Tüm hakları saklıdır.
+              © {new Date().getFullYear()} Özde Rehberlik Psikolojik Danışmanlık
+              Merkezi. Tüm hakları saklıdır.
             </p>
             <div className="flex items-center gap-4">
               <p className="font-serif text-xs text-cream/25 italic hidden md:block">
@@ -237,7 +294,7 @@ export default function Footer() {
               </p>
               <span className="hidden md:block text-cream/10">·</span>
               <a
-                href="http://kerux.tr/"
+                href="http://kerux.site/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans text-[11px] text-cream/25 hover:text-cream/60 transition-colors duration-300 tracking-wide flex items-center gap-1.5 group"

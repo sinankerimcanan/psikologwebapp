@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "./FadeIn";
-import AdaHizmetler, { AdaSertifikalar } from "./AdaHizmetler";
+import { HizmetGrid, SertifikaGrid } from "./ExpertHizmetler";
+import { hizmetlerByExpert } from "./hizmetlerData";
 
 const experts = [
   {
@@ -103,10 +104,8 @@ export default function Experts() {
   const [activeTab, setActiveTab] = useState<Tab>("hakkinda");
 
   const expert = experts.find((e) => e.id === activeId)!;
-  const tabs: Tab[] =
-    expert.id === "ada"
-      ? ["hakkinda", "hizmetler", "sertifikalar"]
-      : ["hakkinda", "hizmetler"];
+  const hizmet = hizmetlerByExpert[expert.id];
+  const tabs: Tab[] = ["hakkinda", "hizmetler", "sertifikalar"];
 
   return (
     <section id="uzman-kadro" className="py-28 md:py-36 bg-cream overflow-hidden">
@@ -301,33 +300,9 @@ export default function Experts() {
                         ))}
                       </div>
                     ) : activeTab === "sertifikalar" ? (
-                      <AdaSertifikalar />
-                    ) : activeId === "ada" ? (
-                      <AdaHizmetler />
+                      <SertifikaGrid certificates={hizmet.certificates} />
                     ) : (
-                      <div>
-                        <div className="flex items-center gap-2 mb-6">
-                          <span className="text-[10px] font-sans font-bold tracking-[0.22em] text-sage uppercase bg-sage-light/40 px-3 py-1 rounded-full">
-                            Çalışma Alanları
-                          </span>
-                        </div>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                          {expert.services.map((service, i) => (
-                            <motion.div
-                              key={service}
-                              initial={{ opacity: 0, x: -8 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              transition={{ delay: i * 0.03, duration: 0.3 }}
-                              className="flex items-start gap-3 px-4 py-3 rounded-xl bg-cream/70 border border-charcoal/5 hover:bg-cream hover:border-sage/20 transition-all duration-200 group"
-                            >
-                              <span className="w-1.5 h-1.5 rounded-full bg-sage mt-[7px] flex-shrink-0 group-hover:scale-125 transition-transform duration-200" />
-                              <span className="font-sans text-sm text-charcoal/80 leading-snug">
-                                {service}
-                              </span>
-                            </motion.div>
-                          ))}
-                        </div>
-                      </div>
+                      <HizmetGrid services={hizmet.services} />
                     )}
                   </motion.div>
                 </AnimatePresence>

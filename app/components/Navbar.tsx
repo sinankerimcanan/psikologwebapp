@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -33,13 +34,15 @@ export default function Navbar() {
         }`}
       >
         {/* Logo */}
-        <a href="#" className="flex flex-col leading-tight group">
-          <span className="font-serif text-lg font-semibold text-charcoal tracking-wide">
-            Özde Rehberlik
-          </span>
-          <span className="text-[10px] font-sans text-warm-gray tracking-[0.18em] uppercase transition-colors duration-300 group-hover:text-sage">
-            Rehberlik ve Psikolojik Danışmanlık Merkezi
-          </span>
+        <a href="#" className="flex items-center group">
+          <Image
+            src="/assets/logo.png"
+            alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
+            width={170}
+            height={48}
+            priority
+            className="h-11 w-auto"
+          />
         </a>
 
         {/* Desktop nav */}
