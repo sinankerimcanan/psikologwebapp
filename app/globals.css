@@ -3,9 +3,9 @@
 @theme {
   --color-cream: #faf8f5;
   --color-cream-dark: #f0ebe3;
-  --color-sage: #3B3080;
-  --color-sage-dark: #22194B;
-  --color-sage-light: #C4BFE8;
+  --color-sage: #7B6FC4;
+  --color-sage-dark: #3B3080;
+  --color-sage-light: #E0DCF5;
   --color-mink: #c4a882;
   --color-mink-light: #e8d8c4;
   --color-charcoal: #2c2c2c;
@@ -60,15 +60,15 @@ body {
   background: #faf8f5;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C4BFE8;
+  background: #E0DCF5;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3B3080;
+  background: #7B6FC4;
 }
 
 /* Selection */
 ::selection {
-  background-color: rgba(59, 48, 128, 0.22);
+  background-color: rgba(123, 111, 196, 0.22);
   color: #2c2c2c;
 }

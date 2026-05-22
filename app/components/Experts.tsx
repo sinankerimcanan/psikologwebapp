@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "./FadeIn";
 import { HizmetGrid, SertifikaGrid } from "./ExpertHizmetler";
@@ -9,6 +10,7 @@ import { hizmetlerByExpert } from "./hizmetlerData";
 const experts = [
   {
     id: "ada",
+    image: "/assets/Adafoto.JPG",
     name: "Psikolog Ada Uyan",
     title: "Klinik Psikolog",
     location: "Konya · Yüz yüze & Online",
@@ -42,6 +44,7 @@ const experts = [
   },
   {
     id: "aybuke",
+    image: "/assets/tuce.JPG",
     name: "Psikolog Aybüke Tuçe Esen",
     title: "Klinik Psikolog · DIR/Floortime İleri Düzey Terapisti",
     location: "Konya · Yüz yüze & Online",
@@ -143,10 +146,8 @@ export default function Experts() {
                 }`}
               >
                 {/* Avatar */}
-                <span
-                  className={`w-7 h-7 rounded-full bg-gradient-to-br ${e.color} flex items-center justify-center text-white text-[10px] font-bold flex-shrink-0`}
-                >
-                  {e.initials}
+                <span className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 relative">
+                  <Image src={e.image} alt={e.name} fill className="object-cover object-top" />
                 </span>
                 <span className="hidden sm:inline">{e.name}</span>
                 <span className="sm:hidden">{e.initials === "AU" ? "Ada Uyan" : "Aybüke Esen"}</span>
@@ -168,46 +169,51 @@ export default function Experts() {
             {/* ── Left: Profile panel ── */}
             <div className="lg:col-span-4 space-y-5">
               {/* Profile card */}
-              <div className="rounded-3xl bg-white border border-charcoal/6 p-8 shadow-sm">
-                {/* Avatar */}
-                <div className={`w-20 h-20 rounded-2xl bg-gradient-to-br ${expert.color} flex items-center justify-center mb-6 shadow-lg`}>
-                  <span className="font-serif text-2xl text-white font-semibold">{expert.initials}</span>
+              <div className="rounded-3xl bg-white border border-charcoal/6 shadow-sm overflow-hidden">
+                {/* Photo */}
+                <div className="relative w-full aspect-[3/4]">
+                  <Image
+                    src={expert.image}
+                    alt={expert.name}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover object-top"
+                  />
                 </div>
 
-                {/* Name & title */}
-                <p className="font-sans text-[10px] font-semibold tracking-[0.22em] uppercase text-warm-gray mb-1">
-                  {expert.title.split("·")[0].trim()}
-                </p>
-                <h3 className="font-serif text-2xl md:text-[1.7rem] text-charcoal leading-tight mb-3">
-                  {expert.name.replace("Psikolog ", "")}
-                </h3>
-                <p className="font-sans text-sm text-warm-gray leading-relaxed mb-6">
-                  {expert.shortDesc}
-                </p>
+                {/* Minimal info */}
+                <div className="px-6 pt-5 pb-5">
+                  <p className="font-sans text-[10px] font-semibold tracking-[0.22em] uppercase text-warm-gray mb-1">
+                    {expert.title.split("·")[0].trim()}
+                  </p>
+                  <h3 className="font-serif text-xl text-charcoal leading-tight mb-3">
+                    {expert.name.replace("Psikolog ", "")}
+                  </h3>
 
-                {/* Location */}
-                <div className="flex items-center gap-2 text-xs font-sans text-warm-gray mb-6">
-                  <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  {expert.location}
-                </div>
+                  {/* Location */}
+                  <div className="flex items-center gap-1.5 text-xs font-sans text-warm-gray mb-4">
+                    <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    {expert.location}
+                  </div>
 
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {expert.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-[10px] font-sans font-medium tracking-wide text-sage bg-sage-light/35 px-3 py-1.5 rounded-full"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {expert.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-[10px] font-sans font-medium tracking-wide text-sage bg-sage-light/35 px-3 py-1.5 rounded-full"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
 
                 {/* CTAs */}
-                <div className="space-y-3">
+                <div className="px-6 pb-6 space-y-3">
                   <a
                     href="#iletisim"
                     className="flex items-center justify-center gap-2 w-full py-3.5 bg-charcoal text-cream rounded-xl font-sans text-sm font-medium tracking-wide hover:bg-sage transition-colors duration-300"
