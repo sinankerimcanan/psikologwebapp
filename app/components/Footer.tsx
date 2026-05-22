@@ -168,7 +168,7 @@ export default function Footer() {
                     </svg>
                     0542 565 58 62
                     <span className="text-cream/35 text-xs">
-                      · Psikolog Aybüke Tuçe Esen
+                      · Psikolog Ada Uyan
                     </span>
                   </a>
                   <a
