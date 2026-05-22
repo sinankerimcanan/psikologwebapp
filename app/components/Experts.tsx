@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeIn from "./FadeIn";
+import AdaHizmetler, { AdaSertifikalar } from "./AdaHizmetler";
 
 const experts = [
   {
@@ -89,11 +90,23 @@ const experts = [
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
 
+type Tab = "hakkinda" | "hizmetler" | "sertifikalar";
+
+const tabLabels: Record<Tab, string> = {
+  hakkinda: "Hakkında",
+  hizmetler: "Hizmetler",
+  sertifikalar: "Sertifikalar",
+};
+
 export default function Experts() {
   const [activeId, setActiveId] = useState("ada");
-  const [activeTab, setActiveTab] = useState<"hakkinda" | "hizmetler">("hakkinda");
+  const [activeTab, setActiveTab] = useState<Tab>("hakkinda");
 
   const expert = experts.find((e) => e.id === activeId)!;
+  const tabs: Tab[] =
+    expert.id === "ada"
+      ? ["hakkinda", "hizmetler", "sertifikalar"]
+      : ["hakkinda", "hizmetler"];
 
   return (
     <section id="uzman-kadro" className="py-28 md:py-36 bg-cream overflow-hidden">
@@ -242,7 +255,7 @@ export default function Experts() {
 
                 {/* Tab header */}
                 <div className="flex border-b border-charcoal/6 px-8">
-                  {(["hakkinda", "hizmetler"] as const).map((tab) => (
+                  {tabs.map((tab) => (
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
@@ -250,7 +263,7 @@ export default function Experts() {
                         activeTab === tab ? "text-charcoal" : "text-warm-gray hover:text-charcoal"
                       }`}
                     >
-                      {tab === "hakkinda" ? "Hakkında" : "Hizmetler"}
+                      {tabLabels[tab]}
                       {activeTab === tab && (
                         <motion.span
                           layoutId="expert-tab-indicator"
@@ -287,6 +300,10 @@ export default function Experts() {
                           </p>
                         ))}
                       </div>
+                    ) : activeTab === "sertifikalar" ? (
+                      <AdaSertifikalar />
+                    ) : activeId === "ada" ? (
+                      <AdaHizmetler />
                     ) : (
                       <div>
                         <div className="flex items-center gap-2 mb-6">

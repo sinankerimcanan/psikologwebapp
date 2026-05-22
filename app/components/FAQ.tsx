@@ -7,7 +7,7 @@ import FadeIn from "./FadeIn";
 const faqs = [
   {
     q: "Terapi sürecine nasıl başlanır?",
-    a: "İlk adım, ücretsiz bir ön görüşme randevusu almaktır. Bu 20 dakikalık görüşmede beklentilerinizi ve ihtiyaçlarınızı konuşur, terapi sürecinin nasıl işleyeceğini birlikte değerlendiririz. Ardından size en uygun seans planını oluştururuz.",
+    a: "İlk adım, ücretsiz bir ön görüşme randevusu almaktır. Bu görüşmede beklentilerinizi ve ihtiyaçlarınızı konuşur, terapi sürecinin nasıl işleyeceğini birlikte değerlendiririz. Ardından size en uygun seans planını oluştururuz.",
   },
   {
     q: "Bir seans ne kadar sürer?",
@@ -110,7 +110,6 @@ export default function FAQ() {
     <section id="sss" className="py-32 bg-cream-dark/40">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-20">
-
           {/* Left: Header */}
           <div className="md:col-span-4">
             <FadeIn>

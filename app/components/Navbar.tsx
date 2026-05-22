@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
   { label: "Uzman Kadromuz", href: "#uzman-kadro" },
-  { label: "Hizmetler", href: "#hizmetler" },
   { label: "Yaklaşım", href: "#yaklasim" },
   { label: "SSS", href: "#sss" },
   { label: "İletişim", href: "#iletisim" },
@@ -36,10 +35,10 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex flex-col leading-tight group">
           <span className="font-serif text-lg font-semibold text-charcoal tracking-wide">
-            Dr. Ayşe Kaya
+            Özde Rehberlik
           </span>
           <span className="text-[10px] font-sans text-warm-gray tracking-[0.18em] uppercase transition-colors duration-300 group-hover:text-sage">
-            Klinik Psikolog
+            Rehberlik ve Psikolojik Danışmanlık Merkezi
           </span>
         </a>
 
