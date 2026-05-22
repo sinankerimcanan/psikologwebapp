@@ -13,7 +13,7 @@ const quickLinks = [
 
 const hours = [
   { day: "Pazartesi – Cuma", time: "09:00 – 18:00" },
-  { day: "Cumartesi", time: "10:00 – 14:00" },
+  { day: "Cumartesi", time: "9:00 – 18:00" },
   { day: "Pazar", time: "Kapalı" },
 ];
 
@@ -94,7 +94,11 @@ export default function Footer() {
                 ].map((s) => (
                   <motion.a
                     key={s.label}
-                    href={s.label === "Instagram" ? "https://www.instagram.com/konyaozdepsikoloji/" : "#"}
+                    href={
+                      s.label === "Instagram"
+                        ? "https://www.instagram.com/konyaozdepsikoloji/"
+                        : "#"
+                    }
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
