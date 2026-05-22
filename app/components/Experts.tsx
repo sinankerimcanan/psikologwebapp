@@ -9,40 +9,6 @@ import { hizmetlerByExpert } from "./hizmetlerData";
 
 const experts = [
   {
-    id: "ada",
-    image: "/assets/Adafoto.JPG",
-    name: "Psikolog Ada Uyan",
-    title: "Psikolog / II.Düzey EMDR Terapisti",
-    location: "Konya · Yüz yüze & Online",
-    shortDesc:
-      "Bilimsel temellere dayalı, etik ilkelere bağlı ve danışan odaklı bir klinik anlayışla çalışmaktadır.",
-    tags: ["EMDR", "BDT", "Travma Odaklı Terapi", "Çözüm Odaklı"],
-    about: [
-      "Psikolog Ada Uyan, mesleki çalışmalarını bilimsel temellere dayalı, etik ilkelere bağlı ve danışan odaklı bir klinik anlayış çerçevesinde sürdürmektedir.",
-      "Konya merkezli olarak yüz yüze ve online terapi hizmeti sunan Psikolog Ada Uyan; ergenler, yetişkinler, çiftler ve ailelerle çalışmakta, farklı terapi ekollerini bütüncül bir yaklaşımla kullanarak danışanlarının ihtiyaçlarına özel terapi süreçleri planlamaktadır.",
-      "Klinik çalışmalarında travma odaklı terapi yöntemlerinin yanı sıra kaygı, depresyon, duygu düzenleme ve ilişki sorunları gibi farklı alanlarda da aktif olarak çalışmaktadır. EMDR 2. Düzey, EMDR 2.0, Bilişsel Davranışçı Terapi (BDT), Aile Danışmanlığı, Çözüm Odaklı Terapi ve Travma Odaklı Çocuk–Ergen BDT alanlarında çeşitli mesleki eğitimler almıştır.",
-      "Meslek hayatı boyunca hem klinik hem de saha deneyimi kazanmıştır. Konya Gıda ve Tarım Üniversitesi Psikolojik Danışmanlık ve Araştırma Merkezi'nde görev almış; 6 Şubat Kahramanmaraş depremlerinin ardından Hatay ve Adıyaman'da uzun süre afet sonrası psikolojik destek, travma terapisi ve kriz müdahalesi çalışmalarında aktif rol almıştır.",
-      "Afet sonrası dönemde edindiği yoğun klinik deneyim, özellikle travma terapisi ve EMDR terapisi alanındaki uzmanlığını derinleştirmiştir. Terapilerinde; travmatik yaşantıların işlenmesi, duygu düzenleme becerilerinin geliştirilmesi ve güven duygusunun yeniden inşası üzerine çalışmaktadır.",
-    ],
-    services: [
-      "Kaygı bozuklukları",
-      "Depresyon",
-      "Travma sonrası stres bozukluğu (TSSB)",
-      "Obsesif kompulsif bozukluk (OKB)",
-      "Panik bozukluk",
-      "Sınav ve performans kaygısı (özellikle ergenlerle)",
-      "Öfke ve duygu düzenleme güçlükleri",
-      "İlişki ve iletişim sorunları",
-      "Travma ve yas süreçleri",
-      "Stres ve tükenmişlik",
-      "Uyum sorunları",
-      "Benlik algısı ve benlik saygısı",
-      "Duygusal yeme davranışı",
-    ],
-    initials: "AU",
-    color: "from-sage to-sage-dark",
-  },
-  {
     id: "aybuke",
     image: "/assets/tuce.JPG",
     name: "Psikolog Aybüke Tuçe Esen",
@@ -90,6 +56,40 @@ const experts = [
     initials: "AE",
     color: "from-mink to-[#b8906a]",
   },
+  {
+    id: "ada",
+    image: "/assets/Adafoto.JPG",
+    name: "Psikolog Ada Uyan",
+    title: "Psikolog / II.Düzey EMDR Terapisti",
+    location: "Konya · Yüz yüze & Online",
+    shortDesc:
+      "Bilimsel temellere dayalı, etik ilkelere bağlı ve danışan odaklı bir klinik anlayışla çalışmaktadır.",
+    tags: ["EMDR", "BDT", "Travma Odaklı Terapi", "Çözüm Odaklı"],
+    about: [
+      "Psikolog Ada Uyan, mesleki çalışmalarını bilimsel temellere dayalı, etik ilkelere bağlı ve danışan odaklı bir klinik anlayış çerçevesinde sürdürmektedir.",
+      "Konya merkezli olarak yüz yüze ve online terapi hizmeti sunan Psikolog Ada Uyan; ergenler, yetişkinler, çiftler ve ailelerle çalışmakta, farklı terapi ekollerini bütüncül bir yaklaşımla kullanarak danışanlarının ihtiyaçlarına özel terapi süreçleri planlamaktadır.",
+      "Klinik çalışmalarında travma odaklı terapi yöntemlerinin yanı sıra kaygı, depresyon, duygu düzenleme ve ilişki sorunları gibi farklı alanlarda da aktif olarak çalışmaktadır. EMDR 2. Düzey, EMDR 2.0, Bilişsel Davranışçı Terapi (BDT), Aile Danışmanlığı, Çözüm Odaklı Terapi ve Travma Odaklı Çocuk–Ergen BDT alanlarında çeşitli mesleki eğitimler almıştır.",
+      "Meslek hayatı boyunca hem klinik hem de saha deneyimi kazanmıştır. Konya Gıda ve Tarım Üniversitesi Psikolojik Danışmanlık ve Araştırma Merkezi'nde görev almış; 6 Şubat Kahramanmaraş depremlerinin ardından Hatay ve Adıyaman'da uzun süre afet sonrası psikolojik destek, travma terapisi ve kriz müdahalesi çalışmalarında aktif rol almıştır.",
+      "Afet sonrası dönemde edindiği yoğun klinik deneyim, özellikle travma terapisi ve EMDR terapisi alanındaki uzmanlığını derinleştirmiştir. Terapilerinde; travmatik yaşantıların işlenmesi, duygu düzenleme becerilerinin geliştirilmesi ve güven duygusunun yeniden inşası üzerine çalışmaktadır.",
+    ],
+    services: [
+      "Kaygı bozuklukları",
+      "Depresyon",
+      "Travma sonrası stres bozukluğu (TSSB)",
+      "Obsesif kompulsif bozukluk (OKB)",
+      "Panik bozukluk",
+      "Sınav ve performans kaygısı (özellikle ergenlerle)",
+      "Öfke ve duygu düzenleme güçlükleri",
+      "İlişki ve iletişim sorunları",
+      "Travma ve yas süreçleri",
+      "Stres ve tükenmişlik",
+      "Uyum sorunları",
+      "Benlik algısı ve benlik saygısı",
+      "Duygusal yeme davranışı",
+    ],
+    initials: "AU",
+    color: "from-sage to-sage-dark",
+  },
 ];
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
@@ -103,7 +103,7 @@ const tabLabels: Record<Tab, string> = {
 };
 
 export default function Experts() {
-  const [activeId, setActiveId] = useState("ada");
+  const [activeId, setActiveId] = useState("aybuke");
   const [activeTab, setActiveTab] = useState<Tab>("hakkinda");
 
   const expert = experts.find((e) => e.id === activeId)!;
