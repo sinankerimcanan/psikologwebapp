@@ -167,6 +167,9 @@ export default function Footer() {
                       />
                     </svg>
                     0542 565 58 62
+                    <span className="text-cream/35 text-xs">
+                      · Psikolog Aybüke Tuçe Esen
+                    </span>
                   </a>
                   <a
                     href="tel:+905421926514"
@@ -186,6 +189,9 @@ export default function Footer() {
                       />
                     </svg>
                     0542 192 65 14
+                    <span className="text-cream/35 text-xs">
+                      · Psikolog Ada Uyan
+                    </span>
                   </a>
                   <a
                     href="mailto:atucesen00@gmail.com"
