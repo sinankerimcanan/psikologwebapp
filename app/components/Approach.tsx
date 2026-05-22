@@ -93,14 +93,14 @@ export default function Approach() {
         </div>
 
         {/* Bottom large decorative text */}
-        <FadeIn className="mt-24 md:mt-32 overflow-hidden" delay={0.1}>
+        {/* <FadeIn className="mt-24 md:mt-32 overflow-hidden" delay={0.1}>
           <p
             className="font-serif leading-none text-[5rem] md:text-[8rem] xl:text-[10rem] text-charcoal/[0.04] select-none pointer-events-none tracking-tight whitespace-nowrap"
             aria-hidden
           >
             Güven · Empati · İyileşme
           </p>
-        </FadeIn>
+        </FadeIn> */}
       </div>
     </section>
   );

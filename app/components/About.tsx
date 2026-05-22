@@ -46,9 +46,11 @@ const hizmetler = [
 
 export default function About() {
   return (
-    <section id="hakkimizda" className="py-28 md:py-36 bg-white overflow-hidden">
+    <section
+      id="hakkimizda"
+      className="py-28 md:py-36 bg-white overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-
         {/* Section label */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-16">
@@ -61,7 +63,6 @@ export default function About() {
 
         {/* Main grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
-
           {/* Left sticky heading */}
           <FadeIn className="lg:col-span-4" direction="left" duration={1.0}>
             <div className="lg:sticky lg:top-28">
@@ -71,27 +72,48 @@ export default function About() {
                 <em className="not-italic text-sage">Kimiz?</em>
               </h2>
               <p className="font-sans text-sm text-warm-gray leading-relaxed mb-8 max-w-xs">
-                Bilimsel temelli yaklaşımla bireyin potansiyelini ortaya çıkarmayı ve yaşam kalitesini artırmayı hedefliyoruz.
+                Bilimsel temelli yaklaşımla bireyin potansiyelini ortaya
+                çıkarmayı ve yaşam kalitesini artırmayı hedefliyoruz.
               </p>
               {/* Trust badges */}
               <div className="space-y-3">
                 {[
                   { label: "MEB Onaylı", sublabel: "Millî Eğitim Bakanlığı" },
-                  { label: "Resmî Ruhsatlı", sublabel: "2026 Yılından İtibaren" },
-                  { label: "Gizlilik Güvencesi", sublabel: "Etik İlkelere Bağlı" },
+                  {
+                    label: "Resmî Ruhsatlı",
+                    sublabel: "2026 Yılından İtibaren",
+                  },
+                  {
+                    label: "Gizlilik Güvencesi",
+                    sublabel: "Etik İlkelere Bağlı",
+                  },
                 ].map((badge) => (
                   <div
                     key={badge.label}
                     className="flex items-center gap-3 px-4 py-3 rounded-2xl bg-cream border border-cream-dark"
                   >
                     <div className="w-7 h-7 rounded-full bg-sage/10 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-3.5 h-3.5 text-sage" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      <svg
+                        className="w-3.5 h-3.5 text-sage"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2.2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
                       </svg>
                     </div>
                     <div>
-                      <p className="font-sans text-xs font-semibold text-charcoal leading-tight">{badge.label}</p>
-                      <p className="font-sans text-[10px] text-warm-gray leading-tight">{badge.sublabel}</p>
+                      <p className="font-sans text-xs font-semibold text-charcoal leading-tight">
+                        {badge.label}
+                      </p>
+                      <p className="font-sans text-[10px] text-warm-gray leading-tight">
+                        {badge.sublabel}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -137,7 +159,12 @@ export default function About() {
           </FadeIn>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {hizmetler.map((h, i) => (
-              <FadeIn key={h.title} className="h-full" delay={0.06 * i} distance={24}>
+              <FadeIn
+                key={h.title}
+                className="h-full"
+                delay={0.06 * i}
+                distance={24}
+              >
                 <div className="flex items-start gap-4 h-full rounded-2xl border border-charcoal/6 bg-cream/60 px-5 py-4 hover:bg-white hover:border-sage/20 hover:shadow-md transition-all duration-300">
                   <span className="w-9 h-9 rounded-xl bg-sage/10 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <svg
@@ -169,14 +196,14 @@ export default function About() {
         </div>
 
         {/* Bottom decorative watermark */}
-        <FadeIn className="mt-24 overflow-hidden" delay={0.1}>
+        {/* <FadeIn className="mt-24 overflow-hidden" delay={0.1}>
           <p
             className="font-serif leading-none text-[5rem] md:text-[8rem] xl:text-[10rem] text-charcoal/[0.035] select-none pointer-events-none tracking-tight whitespace-nowrap"
             aria-hidden
           >
             Güven · Bilim · İyilik
           </p>
-        </FadeIn>
+        </FadeIn> */}
       </div>
     </section>
   );
