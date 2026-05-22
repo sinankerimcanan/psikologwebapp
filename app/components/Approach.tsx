@@ -29,32 +29,26 @@ export default function Approach() {
   return (
     <section id="yaklasim" className="py-32 bg-cream overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-
         {/* Top label */}
         <FadeIn>
           <div className="flex items-center gap-3 mb-16">
             <span className="w-10 h-px bg-charcoal/25" />
             <span className="text-[11px] font-sans font-medium tracking-[0.28em] uppercase text-warm-gray">
-              Yaklaşımım
+              Yaklaşımımız
             </span>
           </div>
         </FadeIn>
 
         {/* Split layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-20 items-start">
-
           {/* Left: Massive quote */}
-          <FadeIn
-            className="md:col-span-7"
-            direction="left"
-            duration={1.0}
-          >
+          <FadeIn className="md:col-span-7" direction="left" duration={1.0}>
             <blockquote className="space-y-6">
               <p className="font-serif text-[2.1rem] md:text-[2.6rem] xl:text-[3.2rem] leading-[1.2] text-charcoal">
                 &ldquo;Her insan, kendi hikayesinin en önemli kahramanıdır.
                 Terapide yaptığımız şey, o hikayenin{" "}
-                <em className="not-italic text-sage">daha sağlıklı</em> ve
-                güçlü bir versiyonunu birlikte yazmaktır.&rdquo;
+                <em className="not-italic text-sage">daha sağlıklı</em> ve güçlü
+                bir versiyonunu birlikte yazmaktır.&rdquo;
               </p>
               <footer className="flex items-center gap-3 pt-2">
                 <span className="w-8 h-px bg-sage" />
