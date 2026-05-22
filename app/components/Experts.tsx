@@ -46,7 +46,7 @@ const experts = [
     id: "aybuke",
     image: "/assets/tuce.JPG",
     name: "Psikolog Aybüke Tuçe Esen",
-    title: "Psikolog / Floortime Terapisti",
+    title: "Psikolog / Floortime İleri Düzey Terapisti",
     location: "Konya · Yüz yüze & Online",
     shortDesc:
       "Gelişimsel ve ruhsal alanları birlikte ele alan bütüncül bir yaklaşımla, özellikle özel gereksinimli bireylerle çalışmaktadır.",
