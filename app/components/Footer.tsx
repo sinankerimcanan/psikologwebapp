@@ -35,7 +35,7 @@ export default function Footer() {
               </h2>
             </div>
             <motion.a
-              href="mailto:info@drayse.com"
+              href="mailto:atucesen00@gmail.com"
               className="inline-flex items-center gap-3 px-8 py-4 border border-cream/20 text-cream rounded-full font-sans text-sm font-medium tracking-wide hover:bg-cream hover:text-charcoal transition-colors duration-400 self-start md:self-auto whitespace-nowrap"
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
@@ -165,7 +165,7 @@ export default function Footer() {
                     0542 565 58 62
                   </a>
                   <a
-                    href="mailto:info@drayse.com"
+                    href="mailto:atucesen00@gmail.com"
                     className="flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300"
                   >
                     <svg
@@ -181,7 +181,7 @@ export default function Footer() {
                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                       />
                     </svg>
-                    info@drayse.com
+                    atucesen00@gmail.com
                   </a>
                   <p className="flex items-start gap-2 font-sans text-sm text-cream/60">
                     <svg
