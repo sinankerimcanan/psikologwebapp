@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 
 const quickLinks = [
   { label: "Hizmetler", href: "#hizmetler" },
-  { label: "Yaklaşımım", href: "#yaklasim" },
+  { label: "Yaklaşımımız", href: "#yaklasim" },
   { label: "SSS", href: "#sss" },
   { label: "Randevu Al", href: "#iletisim" },
 ];
