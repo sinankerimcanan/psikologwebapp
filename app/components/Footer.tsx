@@ -13,7 +13,7 @@ const quickLinks = [
 
 const hours = [
   { day: "Pazartesi – Cuma", time: "09:00 – 18:00" },
-  { day: "Cumartesi", time: "9:00 – 18:00" },
+  { day: "Cumartesi", time: "09:00 – 18:00" },
   { day: "Pazar", time: "09:00 – 18:00" },
 ];
 
