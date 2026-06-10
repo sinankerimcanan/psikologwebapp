@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ease = [0.21, 0.47, 0.32, 0.98] as const;
@@ -116,14 +117,19 @@ export default function Hero() {
             transition={{ duration: 1.0, delay: 0.6, ease }}
             className="mb-8 flex items-center gap-4"
           >
-            <div className="w-14 h-14 rounded-full bg-gradient-to-br from-sage to-sage-dark flex items-center justify-center shadow-lg shadow-sage/20 flex-shrink-0">
-              <svg className="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.6}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
+            <div className="w-20 h-20 rounded-full bg-white/95 flex items-center justify-center shadow-lg shadow-sage/20 flex-shrink-0 overflow-hidden">
+              <Image
+                src="/assets/meblogo.png"
+                alt="MEB logo"
+                width={70}
+                height={70}
+                className="object-contain"
+                priority
+              />
             </div>
             <div>
-              <span className="text-[10px] font-sans font-medium tracking-[0.22em] uppercase text-warm-gray block">
-                Özel · MEB Onaylı
+              <span className="text-[20px] font-sans font-medium tracking-[0.22em] uppercase text-warm-gray block">
+                Milli Eğitim Bakanlığı Onaylı Kurum
               </span>
               <span className="text-[10px] font-sans text-sage tracking-wide">
                 2026'dan itibaren hizmetinizde

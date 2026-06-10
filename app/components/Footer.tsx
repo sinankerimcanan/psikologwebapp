@@ -14,7 +14,7 @@ const quickLinks = [
 const hours = [
   { day: "Pazartesi – Cuma", time: "09:00 – 18:00" },
   { day: "Cumartesi", time: "9:00 – 18:00" },
-  { day: "Pazar", time: "Kapalı" },
+  { day: "Pazar", time: "09:00 – 18:00" },
 ];
 
 export default function Footer() {
@@ -68,7 +68,7 @@ export default function Footer() {
                 <Image
                   src="/assets/logo.png"
                   alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
-                  width={150}
+                  width={250}
                   height={44}
                   className="h-10 w-auto brightness-0 invert"
                 />
@@ -76,10 +76,6 @@ export default function Footer() {
                   Rehberlik Psikolojik Danışmanlık Merkezi
                 </p>
               </div>
-              <p className="font-sans text-sm text-cream/55 leading-relaxed max-w-[260px]">
-                Ruha dokunmak bir sanattır. Bilim ve empatiyi birleştirerek, her
-                danışanıma en iyi versiyonuna ulaşma yolunda eşlik ediyorum.
-              </p>
               {/* Social icons */}
               <div className="flex gap-3 pt-2">
                 {[
@@ -196,6 +192,7 @@ export default function Footer() {
                   <a
                     href="mailto:atucesen00@gmail.com"
                     className="flex items-center gap-2 font-sans text-sm text-cream/60 hover:text-cream transition-colors duration-300"
+                    
                   >
                     <svg
                       className="w-3.5 h-3.5 text-sage flex-shrink-0"
