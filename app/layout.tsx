@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   title: siteTitle,
   description: siteDescription,
   icons: {
-    icon: "/assets/Varlık.1.png",
-    apple: "/assets/Varlık.1.png",
+    icon: "/favicon.ico",
+    apple: "/favicon.ico",
   },
   openGraph: {
     title: siteTitle,
