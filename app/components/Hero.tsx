@@ -129,7 +129,7 @@ export default function Hero() {
             </div>
             <div>
               <span className="text-[20px] font-sans font-medium tracking-[0.22em] uppercase text-warm-gray block">
-                Milli Eğitim Bakanlığı Onaylı Kurum
+                Milli Eğitim Bakanlığı       Onaylı Kurum
               </span>
               <span className="text-[10px] font-sans text-sage tracking-wide">
                 2026'dan itibaren hizmetinizde
