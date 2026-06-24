@@ -38,10 +38,10 @@ export default function Navbar() {
           <Image
             src="/assets/ozdelogo.png"
             alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
-            width={300}
-            height={400}
+            width={360}
+            height={480}
             priority
-            className="h-18 w-auto"
+            className="h-24 md:h-28 w-auto"
           />
         </a>
 
