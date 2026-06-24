@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center group">
           <Image
-            src="/assets/logo.png"
+            src="/assets/ozdelogo.png"
             alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
             width={170}
             height={48}
