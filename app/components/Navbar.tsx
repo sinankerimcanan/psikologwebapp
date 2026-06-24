@@ -39,7 +39,7 @@ export default function Navbar() {
             src="/assets/ozdelogo.png"
             alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
             width={170}
-            height={75}
+            height={300}
             priority
             className="h-18 w-auto"
           />
