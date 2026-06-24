@@ -143,15 +143,15 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.1, delay: 0.65, ease }}
-              className="font-serif leading-[1.05] text-charcoal"
-              style={{ fontSize: "clamp(2.4rem, 5.5vw, 5rem)" }}
+              className="font-serif leading-[1.05] text-black"
+              style={{ fontSize: "clamp(2.3rem, 5.2vw, 4.8rem)" }}
             >
-              <span className="block text-sage font-semibold" style={{ fontSize: "clamp(1rem, 2vw, 1.4rem)", fontFamily: "var(--font-sans)", letterSpacing: "0.08em", fontWeight: 500 }}>Özel Özde</span>
+              <span className="block text-black font-semibold" style={{ fontSize: "clamp(0.95rem, 1.9vw, 1.3rem)", fontFamily: "var(--font-sans)", letterSpacing: "0.08em", fontWeight: 500 }}>Özel Özde</span>
               Rehberlik ve
               <br />
               Psikolojik
               <br />
-              <em className="not-italic text-sage">Danışmanlık</em>
+              <em className="not-italic text-black">Danışmanlık</em>
               <br />
               Merkezi
             </motion.h1>
