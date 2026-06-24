@@ -128,10 +128,10 @@ export default function Hero() {
               />
             </div>
             <div>
-              <span className="text-[20px] font-sans font-medium tracking-[0.22em] uppercase text-warm-gray block">
+              <span className="text-[18px] font-sans font-medium tracking-[0.22em] uppercase text-black block">
                 Milli Eğitim Bakanlığı       Onaylı Kurum
               </span>
-              <span className="text-[10px] font-sans text-sage tracking-wide">
+              <span className="text-[9px] font-sans text-black tracking-wide">
                 2026'dan itibaren hizmetinizde
               </span>
             </div>
