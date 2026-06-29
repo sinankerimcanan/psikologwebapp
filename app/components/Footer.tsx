@@ -66,7 +66,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div>
                 <Image
-                  src="/assets/logo.png"
+                  src="/assets/footerozdelogo.png"
                   alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
                   width={250}
                   height={44}
