@@ -73,7 +73,7 @@ export default function Footer() {
                   className="h-50 w-auto brightness-5 invert"
                 />
                 <p className="font-sans text-xs tracking-[0.18em] uppercase text-warm-gray mt-2">
-                  Rehberlik Psikolojik Danışmanlık Merkezi
+                  Özel Özde Rehberlik ve Psikolojik Danışmanlık Merkezi
                 </p>
               </div>
               {/* Social icons */}
