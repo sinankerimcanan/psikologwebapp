@@ -68,9 +68,9 @@ export default function Footer() {
                 <Image
                   src="/assets/footerozdelogo.png"
                   alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
-                  width={250}
-                  height={44}
-                  className="h-50 w-auto brightness-5 invert"
+                  width={480}
+                  height={640}
+                  className="h-32 md:h-44 lg:h-56 w-auto"
                 />
                 <p className="font-sans text-xs tracking-[0.18em] uppercase text-warm-gray mt-2">
                   Özel Özde Rehberlik ve Psikolojik Danışmanlık Merkezi
