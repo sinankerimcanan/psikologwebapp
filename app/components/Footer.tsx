@@ -70,7 +70,7 @@ export default function Footer() {
                   alt="Özde Rehberlik Psikolojik Danışmanlık Merkezi"
                   width={250}
                   height={44}
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-50 w-auto brightness-10 invert"
                 />
                 <p className="font-sans text-xs tracking-[0.18em] uppercase text-warm-gray mt-2">
                   Rehberlik Psikolojik Danışmanlık Merkezi
