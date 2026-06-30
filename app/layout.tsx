@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import WhatsAppWidget from "./components/WhatsAppWidget";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -63,6 +64,7 @@ export default function RootLayout({
       </head>
       <body className={`${playfair.variable} ${inter.variable} antialiased`}>
         {children}
+        <WhatsAppWidget />
       </body>
     </html>
   );
